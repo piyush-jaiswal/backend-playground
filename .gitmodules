@@ -1,0 +1,12 @@
+[submodule "ecommerce-rest-api"]
+	path = ecommerce-rest-api
+	url = https://github.com/piyush-jaiswal/ecommerce-rest-api.git
+[submodule "tile-and-traverse"]
+	path = tile-and-traverse
+	url = https://github.com/piyush-jaiswal/tile-and-traverse.git
+[submodule "tame-of-thrones"]
+	path = tame-of-thrones
+	url = https://github.com/piyush-jaiswal/tame-of-thrones.git
+[submodule "image-processing"]
+	path = image-processing
+	url = https://github.com/piyush-jaiswal/image-processing.git
