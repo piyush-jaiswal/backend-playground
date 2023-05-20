@@ -10,3 +10,6 @@
 [submodule "image-processing"]
 	path = image-processing
 	url = https://github.com/piyush-jaiswal/image-processing.git
+[submodule "covid19-rest-api"]
+	path = covid19-rest-api
+	url = https://github.com/piyush-jaiswal/covid19-rest-api.git
