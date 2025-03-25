@@ -1,0 +1,32 @@
+name: Update Submodules
+
+on:
+    schedule:
+        - cron: '0 */12 * * *'
+    workflow_dispatch:
+
+jobs:
+    update:
+        runs-on: ubuntu-latest
+
+        steps:
+            - name: Checkout repository with submodules
+              uses: actions/checkout@v4
+              with:
+                  submodules: recursive
+
+            - name: Configure Git
+              run: |
+                  git config --global user.name "github-actions[bot]"
+                  git config --global user.email "github-actions[bot]@users.noreply.github.com"
+
+            - name: Update submodules and push
+              run: |
+                  git submodule update --recursive --remote
+                  git add .
+                  if ! git diff-index --quiet HEAD; then
+                      git commit -m "Update submodule(s)"
+                      git push origin master
+                  else
+                      echo "Nothing to update!"
+                  fi
