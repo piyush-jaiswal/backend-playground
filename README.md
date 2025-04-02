@@ -1,6 +1,6 @@
 
 # Backend Playground
-Collection of small scale backend projects
+Collection of independent backend projects
 
 Each folder is its own project and is linked as a git submodule.
 
